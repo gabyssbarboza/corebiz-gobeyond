@@ -85,6 +85,11 @@ html {
   font-size: 13px;
 }
 
+.x-container-all__localization--infos li a {
+ color: white;
+  text-decoration: none;
+}
+
 .x-container-all__contact {
   display: -webkit-box;
   display: -ms-flexbox;

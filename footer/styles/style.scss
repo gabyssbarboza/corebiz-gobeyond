@@ -1,0 +1,141 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+
+.x-container {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(min-width: 767px) {
+        height: 213px;
+    }
+
+
+    &-all {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: column;
+
+        @media(min-width: 767px) {
+            flex-direction: row;
+            width: 80%;
+        }
+
+        &__localization {
+            &--title {
+                margin: 0;
+                font-size: 18px;
+
+                @media(min-width: 767px) {
+                    font-size: 20px;
+                }
+
+                &::after {
+                    content: "";
+                    margin: 16px 0;
+                    width: 45px;
+                    height: 5px;
+                    background-color: #fff;
+                    display: block;
+                }
+
+            }
+
+            &--infos {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+
+            &--item1 {
+                margin-bottom: 10px;
+            }
+
+            &--item1,
+            &--item2 {
+                width: 195px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                background-color: #fff;
+                border: 0;
+
+
+
+                img {
+                    margin-right: 10px;
+                }
+
+
+                span {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: 'Nunito', sans-serif !important;
+                    font-weight: 600;
+                    line-height: 16.37px;
+                    width: 127px;
+                }
+            }
+
+
+
+        }
+
+        &__copyrigth {
+            display: flex;
+            width: auto;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            @media(min-width: 767px) {
+                width: auto;
+            }
+
+
+            &--corebiz {
+                margin-right: 30px;
+            }
+
+            &--corebiz,
+            &--vtex {
+                font-size: 10.36px;
+                display: flex;
+                font-family: 'Nunito', sans-serif !important;
+                flex-direction: column;
+
+
+
+                img {
+                    max-width: 73px;
+                }
+            }
+        }
+    }
+}
